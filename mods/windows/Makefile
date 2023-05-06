@@ -25,6 +25,7 @@ contribs:
 	$(MAKE) -C ../mods/splewis-get5 contrib
 	$(MAKE) -C ../mods/shanapu-myweaponallocator contrib
 	$(MAKE) -C ../mods/splewis-pugsetup contrib
+	$(MAKE) -C ../mods/warmod contrib
 
 dl-metamod:
 	wget $(METAMOD_URL) -O mmsource-1.12.0-git1167-windows.zip
@@ -46,6 +47,7 @@ mods: dl-metamod dl-sourcemod
 	$(MAKE) -C ../mods/splewis-get5
 	$(MAKE) -C ../mods/shanapu-myweaponallocator
 	$(MAKE) -C ../mods/splewis-pugsetup
+	$(MAKE) -C ../mods/warmod
 	$(DEVTOOLS_ROOT)/merge_databases_cfg.sh $(CSGOSL_ROOT)/mods/databases.cfg $(shell find $(CSGOSL_ROOT)/mods/*/ -name databases.cfg) > $(MODS_CONFIGS)/databases.cfg
 	(cd $(MODS_ROOT) ; zip -r ../mods.zip *)
 	\rm -rf $(MODS_ROOT) >/dev/null 2>&1
@@ -67,4 +69,5 @@ clean:
 	$(MAKE) -C ../mods/splewis-get5 clean
 	$(MAKE) -C ../mods/shanapu-myweaponallocator clean
 	$(MAKE) -C ../mods/splewis-pugsetup clean
-	\rm -f metamod.zip sourcemod.zip mods*.zip
+	$(MAKE) -C ../mods/warmod clean
+	\rm -f mmsource-1.12.0-git1167-windows.zip sourcemod-1.12.0-git7017-windows.zip mods*.zip

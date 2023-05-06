@@ -73,4 +73,4 @@ clean:
 	$(MAKE) -C ../mods/shanapu-myweaponallocator clean
 	$(MAKE) -C ../mods/splewis-pugsetup clean
 	$(MAKE) -C ../mods/warmod clean
-	\rm -f metamod.tar.gz sourcemod.tar.gz mods*.zip
+	\rm -f mmsource-1.12.0-git1167-linux.tar.gz sourcemod-1.12.0-git7017-linux.tar.gz mods*.zip
