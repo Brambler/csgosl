@@ -255,7 +255,7 @@ proc SetSourcemodState { value } {
                   sm_splewis_get5_enable sm_splewis_get5_lanonly\
                   sm_shanapu_myweaponallocator_enable sm_shanapu_myweaponallocator_lanonly\
                   sm_splewis_pugsetup_enable sm_splewis_pugsetup_lanonly\
-                  sm_splewis_pracice_mode_enable sm_splewis_pracice_mode_lanonly\
+                  sm_splewis_practice_mode_enable sm_splewis_practice_mode_lanonly\
                   sm_franug_weaponpaints_enable sm_franug_weaponpaints_lanonly sm_franug_weaponpaints_onlyadmin\
                   sm_franug_weaponpaints_c4 sm_franug_weaponpaints_saytimer sm_franug_weaponpaints_roundtimer sm_franug_weaponpaints_rmenu\
                   sm_franug_weaponpaints_zombiesv sm_franug_knifes_enable sm_franug_knifes_lanonly] {
@@ -277,7 +277,7 @@ proc SetSourcemodState { value } {
     SetSourcemodSplewisGet5State [expr $enabled && [GetConfigItem $sourcemodConfig sm_splewis_get5_enable]]
     SetSourcemodShanapuMyWeaponAllocatorState [expr $enabled && [GetConfigItem $sourcemodConfig sm_shanapu_myweaponallocator_enable]]
     SetSourcemodSplewisPugSetupState [expr $enabled && [GetConfigItem $sourcemodConfig sm_splewis_pugsetup_enable]]
-    SetSourcemodSplewisPracticeModeState [expr $enabled && [GetConfigItem $sourcemodConfig sm_splewis_pracice_mode_enable]]
+    SetSourcemodSplewisPracticeModeState [expr $enabled && [GetConfigItem $sourcemodConfig sm_splewis_practice_mode_enable]]
     SetSourcemodFranugWeaponPaintsState [expr $enabled && [GetConfigItem $sourcemodConfig sm_franug_weaponpaints_enable]]
     SetSourcemodFranugKnifesState [expr $enabled && [GetConfigItem $sourcemodConfig sm_franug_knifes_enable]]
     return $value
