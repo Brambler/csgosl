@@ -36,8 +36,8 @@ dl-sourcemod:
 mods: dl-metamod dl-sourcemod
 	\rm -rf $(MODS_ROOT) mods*.zip >/dev/null 2>&1
 	mkdir -p $(MODS_ROOT)
-	(cd $(MODS_ROOT) ; tar xzvpf ../metamod.tar.gz)
-	(cd $(MODS_ROOT) ; tar xzvpf ../sourcemod.tar.gz)
+	(cd $(MODS_ROOT) ; tar xzvpf ../mmsource-1.12.0-git1167-linux.tar.gz)
+	(cd $(MODS_ROOT) ; tar xzvpf ../sourcemod-1.12.0-git7017-linux.tar.gz)
 	$(MAKE) -C ../mods/weapon_restrict
 	$(MAKE) -C ../mods/multi1v1
 	$(MAKE) -C ../mods/gunmenu
