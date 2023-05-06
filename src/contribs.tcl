@@ -77,7 +77,7 @@ set windows_franug_weapon_paints_url "https://github.com/Franc1sco/Franug-Weapon
 set windows_weapon_restrict_version "3.1.7"
 set windows_weapon_restrict_home_url "https://forums.alliedmods.net/showthread.php?p=950174"
 set windows_weapon_restrict_url "https://forums.alliedmods.net/attachment.php?attachmentid=162251"
-set windows_warmod_version "17.08.12.1053"
+set windows_warmod_version "22.09.26.1915"
 set windows_warmod_home_url "https://forums.alliedmods.net/showthread.php?t=225474"
 set windows_warmod_url "https://warmod.bitbucket.io/plugins/warmod.smx"
 set windows_multi1v1_version "1.1.9"
