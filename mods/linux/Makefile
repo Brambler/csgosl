@@ -28,10 +28,10 @@ contribs:
 	$(MAKE) -C ../mods/splewis-pugsetup contrib
 
 dl-metamod:
-	wget $(METAMOD_URL) -O metamod.tar.gz
+	wget $(METAMOD_URL) -O mmsource-1.12.0-git1167-linux.tar.gz
 
 dl-sourcemod:
-	wget $(SOURCEMOD_URL) -O sourcemod.tar.gz
+	wget $(SOURCEMOD_URL) -O sourcemod-1.12.0-git7017-linux.tar.gz
 
 mods: dl-metamod dl-sourcemod
 	\rm -rf $(MODS_ROOT) mods*.zip >/dev/null 2>&1
