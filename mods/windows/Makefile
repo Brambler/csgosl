@@ -2,10 +2,10 @@
 TARGET=windows
 include ../common.mk
 METAMOD_HOME_URL="http://www.metamodsource.net/"
-METAMOD_URL="https://mms.alliedmods.net/mmsdrop/1.12/mmsource-1.12.0-git1167-linux.tar.gz"
+METAMOD_URL="https://mms.alliedmods.net/mmsdrop/1.12/mmsource-1.12.0-git1167-windows.zip"
 METAMOD_VERSION="1.12.0-git1167"
 SOURCEMOD_HOME_URL="http://www.sourcemod.net/"
-SOURCEMOD_URL="https://sm.alliedmods.net/smdrop/1.12/sourcemod-1.12.0-git7017-linux.tar.gz"
+SOURCEMOD_URL="https://sm.alliedmods.net/smdrop/1.12/sourcemod-1.12.0-git7017-windows.zip"
 SOURCEMOD_VERSION="1.12.0-git7017"
 export
 
@@ -17,7 +17,6 @@ contribs:
 	$(MAKE) -C ../mods/franug-knifes contrib
 	$(MAKE) -C ../mods/franug-weapon-paint contrib
 	$(MAKE) -C ../mods/weapon_restrict contrib
-	$(MAKE) -C ../mods/warmod contrib
 	$(MAKE) -C ../mods/multi1v1 contrib
 	$(MAKE) -C ../mods/gunmenu contrib
 	$(MAKE) -C ../mods/cksurf contrib
@@ -28,18 +27,17 @@ contribs:
 	$(MAKE) -C ../mods/splewis-pugsetup contrib
 
 dl-metamod:
-	wget $(METAMOD_URL) -O metamod.zip
+	wget $(METAMOD_URL) -O mmsource-1.12.0-git1167-windows.zip
 
 dl-sourcemod:
-	wget $(SOURCEMOD_URL) -O sourcemod.zip
+	wget $(SOURCEMOD_URL) -O sourcemod-1.12.0-git7017-windows.zip
 
 mods: dl-metamod dl-sourcemod
 	\rm -rf $(MODS_ROOT) mods*.zip >/dev/null 2>&1
 	mkdir -p $(MODS_ROOT)
-	(cd $(MODS_ROOT) ; unzip -o ../metamod.zip)
-	(cd $(MODS_ROOT) ; unzip -o ../sourcemod.zip)
+	(cd $(MODS_ROOT) ; unzip -o ../mmsource-1.12.0-git1167-windows.zip)
+	(cd $(MODS_ROOT) ; unzip -o ../sourcemod-1.12.0-git7017-windows.zip)
 	$(MAKE) -C ../mods/weapon_restrict
-	$(MAKE) -C ../mods/warmod
 	$(MAKE) -C ../mods/multi1v1
 	$(MAKE) -C ../mods/gunmenu
 	$(MAKE) -C ../mods/cksurf
@@ -61,7 +59,6 @@ clean:
 	$(MAKE) -C ../mods/franug-knifes clean
 	$(MAKE) -C ../mods/franug-weapon-paint clean
 	$(MAKE) -C ../mods/weapon_restrict clean
-	$(MAKE) -C ../mods/warmod clean
 	$(MAKE) -C ../mods/multi1v1 clean
 	$(MAKE) -C ../mods/gunmenu clean
 	$(MAKE) -C ../mods/cksurf clean
