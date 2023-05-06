@@ -24,6 +24,7 @@ contribs:
 	$(MAKE) -C ../mods/influx contrib
 	$(MAKE) -C ../mods/splewis-get5 contrib
 	$(MAKE) -C ../mods/splewis-practice-mode contrib
+	$(MAKE) -C ../mods/warmod contrib
 	$(MAKE) -C ../mods/shanapu-myweaponallocator contrib
 	$(MAKE) -C ../mods/splewis-pugsetup contrib
 
@@ -48,6 +49,7 @@ mods: dl-metamod dl-sourcemod
 	$(MAKE) -C ../mods/shanapu-myweaponallocator
 	$(MAKE) -C ../mods/splewis-pugsetup
 	$(MAKE) -C ../mods/splewis-practice-mode
+	$(MAKE) -C ../mods/warmod
 	$(DEVTOOLS_ROOT)/merge_databases_cfg.sh $(CSGOSL_ROOT)/mods/databases.cfg $(shell find $(CSGOSL_ROOT)/mods/*/ -name databases.cfg) > $(MODS_CONFIGS)/databases.cfg
 	(cd $(MODS_ROOT) ; zip -r ../mods.zip *)
 	\rm -rf $(MODS_ROOT) >/dev/null 2>&1
@@ -70,4 +72,5 @@ clean:
 	$(MAKE) -C ../mods/splewis-practice-mode clean
 	$(MAKE) -C ../mods/shanapu-myweaponallocator clean
 	$(MAKE) -C ../mods/splewis-pugsetup clean
+	$(MAKE) -C ../mods/warmod clean
 	\rm -f metamod.tar.gz sourcemod.tar.gz mods*.zip
