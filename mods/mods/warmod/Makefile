@@ -1,6 +1,6 @@
 WARMOD_HOME_URL="https://forums.alliedmods.net/showthread.php?t=225474"
 WARMOD_URL="https://warmod.bitbucket.io/plugins/warmod.smx"
-WARMOD_VERSION="17.08.12.1053"
+WARMOD_VERSION="22.09.26.1915"
 
 all: build
 
