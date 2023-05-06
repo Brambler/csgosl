@@ -56,6 +56,7 @@ proc GetContributors {} {
             windows_splewis_get5_version windows_splewis_get5_home_url windows_splewis_get5_url\
             windows_shanapu_myweaponallocator_version windows_shanapu_myweaponallocator_home_url windows_shanapu_myweaponallocator_url\
             windows_splewis_pugsetup_version windows_splewis_pugsetup_home_url windows_splewis_pugsetup_url\
+            windows_splewis_practice_mode_version windows_splewis_practice_mode_home_url windows_splewis_practice_mode_url\
             all_esl_serverconfig_version all_esl_serverconfig_home_url all_esl_serverconfig_url\
             all_wargames_theswemaster_version all_wargames_theswemaster_home_url all_wargames_theswemaster_url
 
@@ -121,6 +122,12 @@ proc GetContributors {} {
                 url     [list "Homepage" "$windows_splewis_pugsetup_home_url"] \
                 url     [list "Download $windows_splewis_pugsetup_version" "$windows_splewis_pugsetup_url"] \
                 space   [list] \
+                space   [list] \
+                h2      [list "Sourcemod plugin: splewis_practice_mode $windows_splewis_practice_mode_version"] \
+                line    [list] \
+                url     [list "Homepage" "$windows_splewis_practice_mode_home_url"] \
+                url     [list "Download $windows_splewis_practice_mode_version" "$windows_splewis_practice_mode_url"] \
+                space   [list] \
                 h2      [list "Config files: esl_serverconfig $all_esl_serverconfig_version"] \
                 line    [list] \
                 url     [list "Homepage" "$all_esl_serverconfig_home_url"] \
@@ -171,6 +178,7 @@ proc GetContributors {} {
             linux_splewis_get5_version linux_splewis_get5_home_url linux_splewis_get5_url\
             linux_shanapu_myweaponallocator_version linux_shanapu_myweaponallocator_home_url linux_shanapu_myweaponallocator_url\
             linux_splewis_pugsetup_version linux_splewis_pugsetup_home_url linux_splewis_pugsetup_url\
+            linux_splewis_practice_mode_version linux_splewis_practice_mode_home_url linux_splewis_practice_mode_url\
             all_esl_serverconfig_version all_esl_serverconfig_home_url all_esl_serverconfig_url\
             all_wargames_theswemaster_version all_wargames_theswemaster_home_url all_wargames_theswemaster_url
 
@@ -235,6 +243,12 @@ proc GetContributors {} {
                 line    [list] \
                 url     [list "Homepage" "$linux_splewis_pugsetup_home_url"] \
                 url     [list "Download $linux_splewis_pugsetup_version" "$linux_splewis_pugsetup_url"] \
+                space   [list] \
+                space   [list] \
+                h2      [list "Sourcemod plugin: splewis_practice_mode $linux_splewis_practice_mode_version"] \
+                line    [list] \
+                url     [list "Homepage" "$linux_splewis_practice_mode_home_url"] \
+                url     [list "Download $linux_splewis_practice_mode_version" "$linux_splewis_practice_mode_url"] \
                 space   [list] \
                 h2      [list "Config files: esl_serverconfig $all_esl_serverconfig_version"] \
                 line    [list] \
