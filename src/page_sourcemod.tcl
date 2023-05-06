@@ -26,7 +26,7 @@ variable sourcemodPlugins [list \
     splewis_get5 [list false sm_splewis_get5_enable sm_splewis_get5_lanonly get5.smx] \
     shanapu_myweaponallocator [list false sm_shanapu_myweaponallocator_enable sm_shanapu_myweaponallocator_lanonly MyWeaponAllocator.smx] \
     splewis_pugsetup [list false sm_splewis_pugsetup_enable sm_splewis_pugsetup_lanonly pugsetup.smx] \
-    splewis_practice_mode [list false sm_splewis_practice_mode_enable sm_splewis_pugsetup_practice_mode_lanonly practicemode.smx] \
+    splewis_practice_mode [list false sm_splewis_practice_mode_enable sm_splewis_practice_mode_lanonly practicemode.smx] \
     franug_weaponpaints [list true sm_franug_weaponpaints_enable sm_franug_weaponpaints_lanonly franug_weaponpaints_public.smx] \
     franug_knifes [list true sm_franug_knifes_enable sm_franug_knifes_lanonly sm_franugknife.smx]
 ]
