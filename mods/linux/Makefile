@@ -17,7 +17,6 @@ contribs:
 	$(MAKE) -C ../mods/franug-knifes contrib
 	$(MAKE) -C ../mods/franug-weapon-paint contrib
 	$(MAKE) -C ../mods/weapon_restrict contrib
-	$(MAKE) -C ../mods/warmod contrib
 	$(MAKE) -C ../mods/multi1v1 contrib
 	$(MAKE) -C ../mods/gunmenu contrib
 	$(MAKE) -C ../mods/cksurf contrib
@@ -40,7 +39,6 @@ mods: dl-metamod dl-sourcemod
 	(cd $(MODS_ROOT) ; tar xzvpf ../metamod.tar.gz)
 	(cd $(MODS_ROOT) ; tar xzvpf ../sourcemod.tar.gz)
 	$(MAKE) -C ../mods/weapon_restrict
-	$(MAKE) -C ../mods/warmod
 	$(MAKE) -C ../mods/multi1v1
 	$(MAKE) -C ../mods/gunmenu
 	$(MAKE) -C ../mods/cksurf
@@ -63,7 +61,6 @@ clean:
 	$(MAKE) -C ../mods/franug-knifes clean
 	$(MAKE) -C ../mods/franug-weapon-paint clean
 	$(MAKE) -C ../mods/weapon_restrict clean
-	$(MAKE) -C ../mods/warmod clean
 	$(MAKE) -C ../mods/multi1v1 clean
 	$(MAKE) -C ../mods/gunmenu clean
 	$(MAKE) -C ../mods/cksurf clean
